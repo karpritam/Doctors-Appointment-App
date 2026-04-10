@@ -18,6 +18,7 @@ import appointment_img from "./appointment_img.png";
 import contact_image from "./contact_image.png";
 import cross_icon from "./cross_icon.png";
 import profile_pic from "./profile_pic.png";
+import profile_icon from "./profile_icon.png";
 import razorpay_logo from "./razorpay_logo.png";
 import stripe_logo from "./stripe_logo.png";
 import upload_area from "./upload_area.png";
@@ -40,7 +41,7 @@ import tick_icon from "./tick_icon.svg";
 import upload_area2 from "./upload_area.svg";
 import arrow_icon from "./arrow_icon.svg";
 import chats_icon from "./chats_icon.svg";
-import Darmatologist from "./Darmatologist.svg";
+import Dermatologist from "./Dermatologist.svg";
 import Gastroenterologist from "./Gastroenterologist.svg";
 import General_physician from "./General_physician.svg";
 import Gynecologist from "./Gynecologist.svg";
@@ -61,6 +62,7 @@ export const assets = {
 	verified_icon,
 	info_icon,
 	profile_pic,
+	profile_icon,
 	arrow_icon,
 	contact_image,
 	about_image,
@@ -83,7 +85,7 @@ export const specialityData = [
 	},
 	{
 		speciality: "Dermatologist",
-		image: Darmatologist,
+		image: Dermatologist,
 	},
 	{
 		speciality: "Pediatricians",
@@ -104,7 +106,7 @@ export const doctors = [
 		_id: "doc1",
 		name: "Dr. Richanrd James",
 		image: doc1,
-		speciality: "Geberal Physician",
+		speciality: "General Physician",
 		degree: "MBBS",
 		experience: "4 Years",
 		about:
@@ -119,7 +121,7 @@ export const doctors = [
 		_id: "doc2",
 		name: "Dr. Richanrd James",
 		image: doc2,
-		speciality: "Geberal Physician",
+		speciality: "General Physician",
 		degree: "MBBS",
 		experience: "4 Years",
 		about:
