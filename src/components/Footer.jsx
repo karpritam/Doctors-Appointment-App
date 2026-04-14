@@ -31,19 +31,19 @@ const Footer = () => {
 				<div>
 					<h3 className=" text-lg font-semibold mb-4">Company</h3>
 					<ul className="space-y-2 text-sm">
-						<li onClick={() => navigate("/")} className="cursor-pointer hover:text-black hover:underline block">
+						<li onClick={() => {navigate("/"); scrollTo(0,0)}} className="cursor-pointer hover:text-black hover:underline block">
 							Home
 						</li>
-						<li onClick={() => navigate("/about")} className="cursor-pointer hover:text-black hover:underline block">
+						<li onClick={() => {navigate("/about"); scrollTo(0,0)}} className="cursor-pointer hover:text-black hover:underline block">
 							About
 						</li>
 						<li
-							onClick={() => navigate("/doctors")}
+							onClick={() => {navigate("/doctors"); scrollTo(0,0)}}
 							className="cursor-pointer hover:text-black hover:underline">
 							Doctors
 						</li>
 						<li
-							onClick={() => navigate("/contact")}
+							onClick={() => {navigate("/contact"); scrollTo(0,0)}}
 							className="cursor-pointer hover:text-black hover:underline">
 							Contact
 						</li>
