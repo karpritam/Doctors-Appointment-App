@@ -4,7 +4,7 @@ import { NavLink, useNavigate } from "react-router-dom";
 
 const Navbar = () => {
 	const navigate = useNavigate();
-	const [token, setToken] = useState(null);
+	const [token, setToken] = useState(localStorage.getItem("token"));
 	const [open, setOpen] = useState(false);
 	useEffect(() => {
 		const storedToken = localStorage.getItem("token");
