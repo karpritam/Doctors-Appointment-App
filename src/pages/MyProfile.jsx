@@ -59,7 +59,7 @@ const MyProfile = () => {
 							<input
 								className="bg-gray-50"
 								type="text"
-								onClick={(e) =>
+								onChange={(e) =>
 									setUserData((prev) => ({ ...prev, line1: e.target.value }))
 								}
 								value={userData.address.line1}
@@ -68,7 +68,7 @@ const MyProfile = () => {
 							<input
 								className="bg-gray-50"
 								type="text"
-								onClick={(e) =>
+								onChange={(e) =>
 									setUserData((prev) => ({ ...prev, line2: e.target.value }))
 								}
 								value={userData.address.line2}
@@ -94,8 +94,8 @@ const MyProfile = () => {
 								setUserData((prev) => ({ ...prev, gender: e.target.value }))
 							}
 							value={userData.gender}>
-							<option value="Male"></option>
-							<option value="Female"></option>
+							<option value="Male">Male</option>
+							<option value="Female">Female</option>
 						</select>
 					) : (
 						<p className="text-gray-400">{userData.gender}</p>
@@ -105,7 +105,7 @@ const MyProfile = () => {
 						<input
 							className="max-w-28 bg-gray-100"
 							type="date"
-							onClick={(e) =>
+							onChange={(e) =>
 								setUserData((prev) => ({ ...prev, dob: e.target.value }))
 							}
 							value={userData.dob}
